@@ -17,24 +17,51 @@
 }
 
 
-html, body {
-  scroll-behavior: smooth;
-}
-
-.contain-all-sections {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-
 /* common title css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+/* animation css */
+body {
+  overflow-x: hidden;
+}
 
+.wrapper {
+  position: relative;
+  width: 100vw;
+  padding: 0.1px;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+.section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#section1 {
+  z-index: 0;
+}
+
+#section2 {
+  z-index: 1;
+}
+#section3 {
+  z-index: 2;
+}
+#section4 {
+  z-index: 3;
+}
+#section5 {
+  z-index: 4;
+}
+.fixed {
+  position: fixed;
+}
+/* common theme css  */
 .section-title{
     font-family: 'Archivo Black';
     font-style: Regular;
@@ -506,3 +533,9 @@ html, body {
         font-size: 20px;
     }
 }
+
+
+
+
+
+
