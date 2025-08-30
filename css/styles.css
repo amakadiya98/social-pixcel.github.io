@@ -497,6 +497,13 @@ body {
     .game-grid-button-part .white-arrow img{
         transform: rotate(90deg);
     }
+    .first-game .text-image-part{
+        text-align: center;
+    }
+    .first-game .image-part{
+        display: flex;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 420px) {
     .founder-section .founder-image-part{
