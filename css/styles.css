@@ -335,3 +335,174 @@ html, body {
 .founder-text-img-part .founder-text-part .brand-part img.brand-5{
     width: 74px;
 }
+
+
+@media screen and (max-width: 1366px) {
+    .opportunity-section .gaming-box{
+        width: 50%;
+        max-width: 50%;
+    }
+   .first-game .text-image-part .text-part{
+        width: 50%;
+   }
+   .game-grid-part .game-row .game{
+        width: 300px;
+   }
+   .founder-text-img-part{
+        max-width: 80%;
+   }
+}
+@media screen and (max-width: 1120px) {
+    .opportunity-section .gaming-box{
+        width: 70%;
+        max-width: 70%;
+    }
+}
+@media screen and (max-width: 820px) {
+    .opportunity-section .gaming-box{
+        max-width: 90%;
+        width: 90%;
+    }
+    .first-game .text-image-part .text-part {
+        width: 40%;
+    }
+    .game-grid-part .game-row .game {
+        width: 200px;
+    }
+    .game-grid-part .game-row.second-row-game .game img {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .section-title{
+        font-size: 40px;
+    }
+    .opportunity-section .gaming-box .game-title{
+        font-size: 24px;
+    }
+    .first-game .text-image-part .text-part p{
+        font-size: 20px;
+    }
+    .founder-section .founder-image-part {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 520px) {
+    .section-title {
+        font-size: 24px;
+    }
+    .main-title-block .small-title{
+        font-size: 14px;
+    }
+    .section-title::before, .section-title::after{
+        top: 10px;
+    }
+    .opportunity-section .game-app-part{
+        gap: 30px;
+    }
+    .opportunity-section .game-app-part img{
+        width: 80px;
+    }
+    .opportunity-section .game-info{
+        font-size: 16px;
+    }
+    .opportunity-section .gaming-box::after{
+        right: -34px;
+    }
+    .first-game .text-image-part{
+        flex-wrap: wrap;
+    }
+    .first-game .text-image-part .text-part {
+        width: 80%;
+    }
+    .first-game .text-image-part .text-part{
+        gap: 10px;
+    }
+    .first-game .text-image-part{
+        gap: 60px;
+    }
+    .game-grid-part .game-row{
+        gap: 20px;
+        justify-content: center;
+    }
+    .game-grid-part .game-row .game, .game-grid-part .game-row.second-row-game .game img{
+        width: 90px;
+    }
+    .theme-btn{
+        font-size: 14px;
+    }
+    .founder-text-img-part{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .founder-text-img-part{
+        gap: 60px;
+    }
+    .opportunity-section .gaming-box{
+        padding: 20px;
+    }
+    .opportunity-section .game-info{
+        font-size: 14px;
+    }
+    .opportunity-section .gaming-box::after{
+        right: -15px;
+        width: 80px;
+        height: 80px;
+    }
+    .opportunity-section .gaming-box .game-title {
+        font-size: 18px;
+    }
+    .first-game .text-image-part .image-part img{
+        max-width: 60%;
+    }
+    .first-game .text-image-part .text-part p {
+        font-size: 16px;
+    }
+    .game-grid-part .game-row{
+        gap: 8px;
+    }
+    .game-grid-part .game-row .game, .game-grid-part .game-row.second-row-game .game img{
+        width: 80px;
+    }
+    .game-grid-button-part{
+        flex-direction: column;
+    }
+    .game-grid-button-part .white-arrow img{
+        transform: rotate(90deg);
+    }
+}
+@media screen and (max-width: 420px) {
+    .founder-section .founder-image-part{
+        text-align: center;
+    }
+    .founder-section .founder-image-part img {
+    width: 60%;
+    }
+    .founder-text-img-part .founder-text-part p{
+        margin-bottom: 8px;
+        font-size: 12px;
+    }
+    .social-pixcel-section .banner-image-block img{
+        width: 100%;
+    }
+    .section-common-spacing{
+        padding: 40px 10px;
+    }
+    .game-grid-part .game-row .game, .game-grid-part .game-row.second-row-game .game img{
+        width: 90px;
+    }
+    .game-grid-part .game-row .arrow img{
+        width: 22px;
+    }
+    .game-grid-part .game-row .game .game-title{
+        font-size: 14px;
+    }
+    .founder-text-img-part .founder-text-part .brand-part{
+        gap: 12px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .section-title {
+        font-size: 20px;
+    }
+}
