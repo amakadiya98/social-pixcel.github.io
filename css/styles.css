@@ -510,7 +510,10 @@ body {
         text-align: center;
     }
     .founder-section .founder-image-part img {
-    width: 60%;
+    width: 50%;
+    }
+        .founder-section .founder-image-part {
+        width: 90%;
     }
     .founder-text-img-part .founder-text-part p{
         margin-bottom: 8px;
