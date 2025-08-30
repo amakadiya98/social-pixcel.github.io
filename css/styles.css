@@ -1,0 +1,337 @@
+/* common fonts style */
+@font-face {
+  font-family: 'Archivo Black';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/ArchivoBlack-Regular.ttf') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Mont-light';
+    src: url('../fonts/Mont-ExtraLight.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Mont-heavy';
+    src: url('../fonts/Mont-Heavy.otf') format('opentype');
+}
+
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+.contain-all-sections {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+
+/* common title css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section-title{
+    font-family: 'Archivo Black';
+    font-style: Regular;
+    font-size: 50px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.section-title span{
+    color: #43D6EC;
+}
+.section-title::before, .section-title::after{
+    content: '';
+    position: absolute;
+    background-image: url('../images/title-arrow.svg');
+    width: 45px;
+    height: 14px;
+    background-repeat: no-repeat;
+    top: 20px;
+}
+.section-title::before{
+    transform: rotate(180deg);
+    left: -58px;
+}
+.section-title::after{
+   right: -58px;
+}
+.main-title-block .small-title{
+    font-family: 'Mont-light';
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.main-title-block .small-title code{
+    font-weight: 100;
+}
+.section-common-spacing{
+    padding: 80px 0;
+}
+.section-common-bg{
+    background-image: url('../images/opportunity.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.theme-btn{
+    background: linear-gradient(90deg, #F6D145 0%, #EE922C 100%);
+    box-shadow: 10px 24px 58px 0px #050434;
+    padding: 18px;
+    border: 1px solid #fff;
+    font-family: 'Archivo Black';
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 30px;
+}
+.theme-btn.pink{
+    background: linear-gradient(90deg, #D27ABE 0%, #ED1DAB 100%);
+}
+.theme-btn.btn-sm{
+    padding: 18px 40px;
+}
+.theme-btn:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+/* social pixel section */
+.social-pixcel-section{
+    background-image: url('../images/social-pixels.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* opportunity section */
+.opportunity-section{
+    gap: 40px;
+}
+.opportunity-section .gaming-box{
+    backdrop-filter: blur(25px);
+    box-shadow: 
+    0px 1px 40px 0px #0D89CF33 inset,
+    0px 4px 18px 0px #083B584D inset,
+    0px 98px 100px -48px #00A1FD4D inset,
+    0px -82px 68px -64px #0E4E724D inset,
+    0px 7px 11px -4px #FFFFFF inset,
+    0px 39px 56px -36px #FFFFFF80 inset;
+    padding: 34px 48px;
+    border-radius: 30px;
+    color: '#fff';
+    width: 42%;
+    max-width: 42%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+.opportunity-section .gaming-box::after{
+    position: absolute;
+    content: "";
+    background-image: url('../images/alion.png');
+    width: 120px;
+    height: 120px;
+    z-index: 9;
+    background-size: contain;
+    right: -48px;
+    bottom: -50px;
+}
+.opportunity-section .gaming-box .game-title{
+    font-family: 'Mont-heavy';
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+}
+.opportunity-section .game-app-part{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 54px;
+}
+.opportunity-section .game-app-part::after{
+    content: "";
+    position: absolute; 
+    background-image: url('../images/blur-round.png');
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.opportunity-section .game-info{
+    font-family: 'Mont-heavy';
+    font-weight: 800;
+    font-style: italic;
+    font-size: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+}
+.opportunity-section .overlap-text{
+    font-family: 'Mont-heavy';
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 0%;
+    color: #ED1DAB;
+}
+/* first game section */
+.first-game{
+    gap: 60px;
+    background-image: url('../images/first-game.jpg');
+    background-position: center;
+}
+.first-game .text-image-part{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.first-game .text-image-part .text-part{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    width: 40%;
+}
+.first-game .text-image-part .text-part h6{
+    font-family: 'Mont-heavy';
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: 0%;
+    color: #CD40B7;
+    margin-bottom: 10px;
+}
+.first-game .text-image-part .text-part p{
+    font-family: 'Mont-light';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+/* long term section */
+.long-term-section{
+    background-image: url('../images/first-game.jpg');
+    background-position: center;
+}
+/* long term vision part */
+.game-grid-button-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.game-grid-part .game-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+.game-grid-part .game-row .game {
+   width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game-grid-part .game-row.second-row-game .game img{
+    width: 200px;
+}
+.game-grid-part .game-row .game .game-title{
+    font-family: 'Mont-light';
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+/* founder section */
+.founder-section{
+    background-image: url('../images/Founder-bg.png');
+    background-position: center;
+}
+.founder-text-img-part{
+    display: flex;
+    align-items: center;
+    max-width: 60%;
+    gap: 25px;
+}
+.founder-section .founder-image-part{
+    width: 40%;
+}
+.founder-section .founder-image-part img{
+    width: 100%;
+}
+.founder-text-img-part .founder-name-box{
+    box-shadow: 0px 98px 100px -48px #00A1FD4D inset,0px -82px 68px -64px #0E4E724D inset,0px 7px 11px -4px #FFFFFF inset,0px 39px 56px -36px #FFFFFF80 inset;
+    font-family: 'Mont-heavy';
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 14px 16px;
+    max-width: 70%;
+    margin: -20px auto;
+    z-index: 9;
+    position: relative;
+}
+.founder-text-img-part .founder-text-part p{
+   font-family: 'Mont-light';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.founder-text-img-part .founder-text-part p span{
+    color: #43D6EC;
+}
+.founder-text-img-part .founder-text-part .brand-part{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.founder-text-img-part .founder-text-part .brand-part img.brand-1{
+    width: 42px;
+}
+.founder-text-img-part .founder-text-part .brand-part img.brand-2{
+    width: 52px;
+}
+.founder-text-img-part .founder-text-part .brand-part img.brand-3{
+    width: 42px;
+}
+.founder-text-img-part .founder-text-part .brand-part img.brand-4{
+    width: 70px;
+}
+.founder-text-img-part .founder-text-part .brand-part img.brand-5{
+    width: 74px;
+}
