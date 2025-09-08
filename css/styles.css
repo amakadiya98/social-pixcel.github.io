@@ -146,15 +146,15 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-.main-bg{
-    background-image: url('../images/bg-main.png');
+.contain-all-sections{
+    background-image: url('../images/main-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: top center;
 }
 /* social pixel section */
 .social-pixcel-section{
-    background-image: url('../images/social-pixels.jpg');
+    /* background-image: url('../images/social-pixels.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
