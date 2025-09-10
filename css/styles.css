@@ -152,9 +152,16 @@ body {
     background-size: cover;
     background-position: top center;
 }
+
+.section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(1.2);
+    width: 100%;
+}
 /* social pixel section */
 .social-pixcel-section{
-    /* background-image: url('../images/social-pixels.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -163,8 +170,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.social-pixcel-section .banner-content{
+    transform: scale(1.5);
+    margin-top: 80px;
+}
+
 /* opportunity section */
-.opportunity-section{
+.opportunity-section .section-content{
     gap: 40px;
 }
 .opportunity-section .gaming-box{
@@ -235,7 +248,7 @@ body {
     color: #ED1DAB;
 }
 /* first game section */
-.first-game{
+.first-game .section-content{
     gap: 60px;
 }
 .first-game .text-image-part{
@@ -381,6 +394,18 @@ body {
    .founder-text-img-part{
         max-width: 80%;
    }
+   .section-content{
+        transform: scale(1);
+   }
+   .social-pixcel-section .banner-content{
+        transform: scale(1.2);
+   }
+}
+@media screen and (max-width: 1280px) {
+    .social-pixcel-section .banner-content{
+      transform: scale(1);
+      margin-top: 0;
+    }
 }
 @media screen and (max-width: 1120px) {
     .opportunity-section .gaming-box{
